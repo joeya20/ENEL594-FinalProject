@@ -1,0 +1,60 @@
+[2023-01-26 14:19:17] This is codeql database analyze codeql-RTG011 --format=csv --output=res.csv ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:19:17] Log file was started late.
+[2023-01-26 14:19:17] [PROGRESS] database analyze> Running queries.
+[2023-01-26 14:19:17] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml --no-rerun -- /home/joey/Desktop/test/RTG011/codeql-RTG011 ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:19:17] Calling plumbing command: codeql resolve ram --format=json
+[2023-01-26 14:19:17] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1966M",
+                        "--off-heap-ram=1966"
+                      ]
+[2023-01-26 14:19:17] Spawning plumbing command: execute queries -J-Xmx1966M --off-heap-ram=1966 --verbosity=progress --logdir=/home/joey/Desktop/test/RTG011/codeql-RTG011/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml --no-rerun --output=/home/joey/Desktop/test/RTG011/codeql-RTG011/results -- /home/joey/Desktop/test/RTG011/codeql-RTG011/db-cpp ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:19:18] Plumbing command codeql execute queries terminated with status 0.
+[2023-01-26 14:19:18] Plumbing command codeql database run-queries completed with status 0.
+[2023-01-26 14:19:18] [PROGRESS] database analyze> Interpreting results.
+[2023-01-26 14:19:18] Running plumbing command: codeql database interpret-results --format=csv -o=/home/joey/Desktop/test/RTG011/res.csv --max-paths=4 --csv-location-format=line-column --print-diagnostics-summary --print-metrics-summary --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml -- /home/joey/Desktop/test/RTG011/codeql-RTG011 ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:19:18] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml --format=json -- ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:19:18] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-cpp at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp.
+[2023-01-26 14:19:18] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/joey/Desktop/test/RTG011/../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql"
+                      ]
+[2023-01-26 14:19:18] [DETAILS] database interpret-results> Scanning for [codeql-pack.yml, qlpack.yml] from /tools/codeql/.codeqlmanifest.json
+[2023-01-26 14:19:18] [DETAILS] database interpret-results> Scanning for [codeql-pack.yml, qlpack.yml] from /tools/
+[2023-01-26 14:19:18] [DETAILS] database interpret-results> Not scanning from /tools/codeql which is already done.
+[2023-01-26 14:19:18] [PROGRESS] database interpret-results> Interpreting /home/joey/Desktop/test/RTG011/../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql...
+[2023-01-26 14:19:18] Calling plumbing command: codeql resolve library-path --query=/home/joey/Desktop/test/RTG011/../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql --full-library-path=none --dbscheme=none --format=json
+[2023-01-26 14:19:18] [DETAILS] resolve library-path> Resolving query at normalized path /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql.
+[2023-01-26 14:19:18] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-cpp' at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp.
+[2023-01-26 14:19:18] [DETAILS] resolve library-path> Adding compilation cache at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/.cache.
+[2023-01-26 14:19:18] [DETAILS] resolve library-path> Dbscheme was explicitly overridden as /home/joey/Desktop/test/RTG011/none
+[2023-01-26 14:19:18] [DETAILS] resolve library-path> Library path was overridden on command line.
+[2023-01-26 14:19:18] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/joey/Desktop/test/RTG011/none"
+                        ],
+                        "dbscheme" : "/home/joey/Desktop/test/RTG011/none",
+                        "compilationCache" : [
+                          "/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/.cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-cpp/dataflow.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-cpp"
+                      }
+[2023-01-26 14:19:18] [DETAILS] database interpret-results>  ... found results file at /home/joey/Desktop/test/RTG011/codeql-RTG011/results/getting-started/codeql-extra-queries-cpp/dataflow.bqrs.
+[2023-01-26 14:19:18] Exception caught at top level: Could not process query metadata for /home/joey/Desktop/test/RTG011/../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql.
+                      Error was: Expected result pattern(s) are not present for problem query: Expected exactly one pattern. [INVALID_RESULT_PATTERNS]
+                      com.semmle.cli2.database.InterpretResultsCommand.executeSubcommand(InterpretResultsCommand.java:173)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.PlumbingRunner.run(PlumbingRunner.java:110)
+                      com.semmle.cli2.picocli.SubcommandCommon.runPlumbingInProcess(SubcommandCommon.java:188)
+                      com.semmle.cli2.database.AnalyzeCommand.executeSubcommand(AnalyzeCommand.java:100)
+                      com.semmle.cli2.picocli.SubcommandCommon.lambda$executeSubcommandWithMessages$2(SubcommandCommon.java:625)
+                      com.semmle.cli2.picocli.SubcommandCommon.withCompilationMessages(SubcommandCommon.java:405)
+                      com.semmle.cli2.picocli.SubcommandCommon.executeSubcommandWithMessages(SubcommandCommon.java:624)
+                      com.semmle.cli2.picocli.SubcommandCommon.call(SubcommandCommon.java:561)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:225)
+                      com.semmle.cli2.picocli.SubcommandMaker.runMain(SubcommandMaker.java:234)
+                      com.semmle.cli2.CodeQL.main(CodeQL.java:100)

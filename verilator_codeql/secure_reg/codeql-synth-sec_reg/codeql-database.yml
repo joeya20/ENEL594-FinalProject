@@ -1,0 +1,9 @@
+---
+sourceLocationPrefix: "/home/joey/Desktop/test/synthetic"
+baselineLinesOfCode: 893
+unicodeNewlines: false
+columnKind: "utf8"
+primaryLanguage: "cpp"
+creationMetadata:
+  cliVersion: "2.11.6"
+  creationTime: "2023-02-15T18:49:27.448820451Z"

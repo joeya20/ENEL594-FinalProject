@@ -1,0 +1,203 @@
+<?xml version="1.0" ?>
+<!-- DESCRIPTION: Verilator output: XML representation of netlist -->
+<verilator_xml>
+  <files>
+    <file id="a" filename="&lt;built-in&gt;" language="1800-2017"/>
+    <file id="b" filename="&lt;command-line&gt;" language="1800-2017"/>
+    <file id="c" filename="ctrl.sv" language="1800-2017"/>
+    <file id="d" filename="reg.sv" language="1800-2017"/>
+  </files>
+  <module_files>
+    <file id="c" filename="ctrl.sv" language="1800-2017"/>
+    <file id="d" filename="reg.sv" language="1800-2017"/>
+  </module_files>
+  <cells>
+    <cell fl="c1" loc="c,1,8,1,12" name="ctrl" submodname="ctrl" hier="ctrl">
+      <cell fl="c22" loc="c,22,12,22,25" name="secure_reg_u0" submodname="secure_reg" hier="ctrl.secure_reg_u0"/>
+      <cell fl="c28" loc="c,28,12,28,25" name="secure_reg_u1" submodname="secure_reg" hier="ctrl.secure_reg_u1"/>
+      <cell fl="c34" loc="c,34,12,34,25" name="secure_reg_u2" submodname="secure_reg" hier="ctrl.secure_reg_u2"/>
+    </cell>
+  </cells>
+  <netlist>
+    <module fl="c1" loc="c,1,8,1,12" name="ctrl" origName="ctrl" topModule="1">
+      <var fl="c2" loc="c,2,11,2,14" name="clk" dtype_id="1" dir="input" pinIndex="1" vartype="logic" origName="clk"/>
+      <var fl="c3" loc="c,3,11,3,16" name="rst_n" dtype_id="1" dir="input" pinIndex="2" vartype="logic" origName="rst_n"/>
+      <var fl="c4" loc="c,4,17,4,20" name="cfg" dtype_id="2" dir="input" pinIndex="3" vartype="logic" origName="cfg"/>
+      <var fl="c5" loc="c,5,17,5,19" name="wd" dtype_id="3" dir="input" pinIndex="4" vartype="logic" origName="wd"/>
+      <var fl="c6" loc="c,6,18,6,21" name="out" dtype_id="3" dir="output" pinIndex="5" vartype="logic" origName="out"/>
+      <var fl="c10" loc="c,10,13,10,20" name="cfg_reg" dtype_id="2" vartype="logic" origName="cfg_reg"/>
+      <always fl="c12" loc="c,12,1,12,10">
+        <sentree fl="c12" loc="c,12,11,12,12">
+          <senitem fl="c12" loc="c,12,14,12,21" edgeType="POS">
+            <varref fl="c12" loc="c,12,22,12,25" name="clk" dtype_id="1"/>
+          </senitem>
+        </sentree>
+        <begin fl="c12" loc="c,12,27,12,32">
+          <if fl="c13" loc="c,13,5,13,7">
+            <varref fl="c13" loc="c,13,9,13,14" name="rst_n" dtype_id="1"/>
+            <begin fl="c15" loc="c,15,14,15,19">
+              <if fl="c16" loc="c,16,9,16,11">
+                <not fl="c16" loc="c,16,23,16,25" dtype_id="1">
+                  <sel fl="c16" loc="c,16,19,16,20" dtype_id="1">
+                    <varref fl="c16" loc="c,16,12,16,19" name="cfg_reg" dtype_id="2"/>
+                    <const fl="c16" loc="c,16,20,16,21" name="2&apos;h2" dtype_id="4"/>
+                    <const fl="c16" loc="c,16,19,16,20" name="32&apos;h1" dtype_id="5"/>
+                  </sel>
+                </not>
+                <begin fl="c16" loc="c,16,32,16,37">
+                  <assigndly fl="c17" loc="c,17,21,17,23" dtype_id="2">
+                    <varref fl="c17" loc="c,17,24,17,27" name="cfg" dtype_id="2"/>
+                    <varref fl="c17" loc="c,17,13,17,20" name="cfg_reg" dtype_id="2"/>
+                  </assigndly>
+                </begin>
+              </if>
+            </begin>
+            <begin fl="c13" loc="c,13,16,13,21">
+              <assigndly fl="c14" loc="c,14,17,14,19" dtype_id="2">
+                <const fl="c14" loc="c,14,20,14,22" name="3&apos;h0" dtype_id="2"/>
+                <varref fl="c14" loc="c,14,9,14,16" name="cfg_reg" dtype_id="2"/>
+              </assigndly>
+            </begin>
+          </if>
+        </begin>
+      </always>
+      <instance fl="c22" loc="c,22,12,22,25" name="secure_reg_u0" defName="secure_reg" origName="secure_reg_u0">
+        <port fl="c24" loc="c,24,6,24,8" name="re" direction="in" portIndex="2">
+          <sel fl="c24" loc="c,24,16,24,17" dtype_id="1">
+            <varref fl="c24" loc="c,24,9,24,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c24" loc="c,24,17,24,18" name="2&apos;h0" dtype_id="4"/>
+            <const fl="c24" loc="c,24,16,24,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c25" loc="c,25,6,25,8" name="we" direction="in" portIndex="3">
+          <sel fl="c25" loc="c,25,16,25,17" dtype_id="1">
+            <varref fl="c25" loc="c,25,9,25,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c25" loc="c,25,17,25,18" name="2&apos;h1" dtype_id="4"/>
+            <const fl="c25" loc="c,25,16,25,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c22" loc="c,22,12,22,25" name="clk" direction="in" portIndex="0">
+          <varref fl="c22" loc="c,22,12,22,25" name="clk" dtype_id="1"/>
+        </port>
+        <port fl="c22" loc="c,22,12,22,25" name="rst_n" direction="in" portIndex="0">
+          <varref fl="c22" loc="c,22,12,22,25" name="rst_n" dtype_id="1"/>
+        </port>
+        <port fl="c22" loc="c,22,12,22,25" name="wd" direction="in" portIndex="0">
+          <varref fl="c22" loc="c,22,12,22,25" name="wd" dtype_id="3"/>
+        </port>
+        <port fl="c22" loc="c,22,12,22,25" name="out" direction="out" portIndex="0">
+          <varref fl="c22" loc="c,22,12,22,25" name="out" dtype_id="3"/>
+        </port>
+      </instance>
+      <instance fl="c28" loc="c,28,12,28,25" name="secure_reg_u1" defName="secure_reg" origName="secure_reg_u1">
+        <port fl="c30" loc="c,30,6,30,8" name="re" direction="in" portIndex="2">
+          <sel fl="c30" loc="c,30,16,30,17" dtype_id="1">
+            <varref fl="c30" loc="c,30,9,30,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c30" loc="c,30,17,30,18" name="2&apos;h0" dtype_id="4"/>
+            <const fl="c30" loc="c,30,16,30,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c31" loc="c,31,6,31,8" name="we" direction="in" portIndex="3">
+          <sel fl="c31" loc="c,31,16,31,17" dtype_id="1">
+            <varref fl="c31" loc="c,31,9,31,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c31" loc="c,31,17,31,18" name="2&apos;h1" dtype_id="4"/>
+            <const fl="c31" loc="c,31,16,31,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c28" loc="c,28,12,28,25" name="clk" direction="in" portIndex="0">
+          <varref fl="c28" loc="c,28,12,28,25" name="clk" dtype_id="1"/>
+        </port>
+        <port fl="c28" loc="c,28,12,28,25" name="rst_n" direction="in" portIndex="0">
+          <varref fl="c28" loc="c,28,12,28,25" name="rst_n" dtype_id="1"/>
+        </port>
+        <port fl="c28" loc="c,28,12,28,25" name="wd" direction="in" portIndex="0">
+          <varref fl="c28" loc="c,28,12,28,25" name="wd" dtype_id="3"/>
+        </port>
+        <port fl="c28" loc="c,28,12,28,25" name="out" direction="out" portIndex="0">
+          <varref fl="c28" loc="c,28,12,28,25" name="out" dtype_id="3"/>
+        </port>
+      </instance>
+      <instance fl="c34" loc="c,34,12,34,25" name="secure_reg_u2" defName="secure_reg" origName="secure_reg_u2">
+        <port fl="c36" loc="c,36,6,36,8" name="re" direction="in" portIndex="2">
+          <sel fl="c36" loc="c,36,16,36,17" dtype_id="1">
+            <varref fl="c36" loc="c,36,9,36,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c36" loc="c,36,17,36,18" name="2&apos;h0" dtype_id="4"/>
+            <const fl="c36" loc="c,36,16,36,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c37" loc="c,37,6,37,8" name="we" direction="in" portIndex="3">
+          <sel fl="c37" loc="c,37,16,37,17" dtype_id="1">
+            <varref fl="c37" loc="c,37,9,37,16" name="cfg_reg" dtype_id="2"/>
+            <const fl="c37" loc="c,37,17,37,18" name="2&apos;h1" dtype_id="4"/>
+            <const fl="c37" loc="c,37,16,37,17" name="32&apos;h1" dtype_id="5"/>
+          </sel>
+        </port>
+        <port fl="c34" loc="c,34,12,34,25" name="clk" direction="in" portIndex="0">
+          <varref fl="c34" loc="c,34,12,34,25" name="clk" dtype_id="1"/>
+        </port>
+        <port fl="c34" loc="c,34,12,34,25" name="rst_n" direction="in" portIndex="0">
+          <varref fl="c34" loc="c,34,12,34,25" name="rst_n" dtype_id="1"/>
+        </port>
+        <port fl="c34" loc="c,34,12,34,25" name="wd" direction="in" portIndex="0">
+          <varref fl="c34" loc="c,34,12,34,25" name="wd" dtype_id="3"/>
+        </port>
+        <port fl="c34" loc="c,34,12,34,25" name="out" direction="out" portIndex="0">
+          <varref fl="c34" loc="c,34,12,34,25" name="out" dtype_id="3"/>
+        </port>
+      </instance>
+    </module>
+    <module fl="d1" loc="d,1,8,1,18" name="secure_reg" origName="secure_reg">
+      <var fl="d2" loc="d,2,11,2,14" name="clk" dtype_id="1" dir="input" pinIndex="1" vartype="logic" origName="clk"/>
+      <var fl="d3" loc="d,3,11,3,16" name="rst_n" dtype_id="1" dir="input" pinIndex="2" vartype="logic" origName="rst_n"/>
+      <var fl="d4" loc="d,4,11,4,13" name="re" dtype_id="1" dir="input" pinIndex="3" vartype="logic" origName="re"/>
+      <var fl="d5" loc="d,5,11,5,13" name="we" dtype_id="1" dir="input" pinIndex="4" vartype="logic" origName="we"/>
+      <var fl="d6" loc="d,6,17,6,19" name="wd" dtype_id="3" dir="input" pinIndex="5" vartype="logic" origName="wd"/>
+      <var fl="d7" loc="d,7,18,7,21" name="out" dtype_id="3" dir="output" pinIndex="6" vartype="logic" origName="out"/>
+      <var fl="d10" loc="d,10,13,10,17" name="data" dtype_id="3" vartype="logic" origName="data"/>
+      <always fl="d12" loc="d,12,1,12,10">
+        <sentree fl="d12" loc="d,12,11,12,12">
+          <senitem fl="d12" loc="d,12,14,12,21" edgeType="POS">
+            <varref fl="d12" loc="d,12,22,12,25" name="clk" dtype_id="1"/>
+          </senitem>
+        </sentree>
+        <begin fl="d12" loc="d,12,27,12,32">
+          <if fl="d13" loc="d,13,5,13,7">
+            <varref fl="d13" loc="d,13,9,13,14" name="rst_n" dtype_id="1"/>
+            <begin fl="d15" loc="d,15,14,15,19">
+              <if fl="d16" loc="d,16,9,16,11">
+                <varref fl="d16" loc="d,16,12,16,14" name="re" dtype_id="1"/>
+                <begin fl="d16" loc="d,16,16,16,21">
+                  <assigndly fl="d17" loc="d,17,18,17,20" dtype_id="3">
+                    <varref fl="d17" loc="d,17,21,17,23" name="wd" dtype_id="3"/>
+                    <varref fl="d17" loc="d,17,13,17,17" name="data" dtype_id="3"/>
+                  </assigndly>
+                </begin>
+              </if>
+            </begin>
+            <begin fl="d13" loc="d,13,16,13,21">
+              <assigndly fl="d14" loc="d,14,14,14,16" dtype_id="3">
+                <const fl="d14" loc="d,14,17,14,19" name="8&apos;h0" dtype_id="3"/>
+                <varref fl="d14" loc="d,14,9,14,13" name="data" dtype_id="3"/>
+              </assigndly>
+            </begin>
+          </if>
+        </begin>
+      </always>
+      <contassign fl="d22" loc="d,22,12,22,13" dtype_id="3">
+        <cond fl="d22" loc="d,22,27,22,28" dtype_id="3">
+          <varref fl="d22" loc="d,22,15,22,17" name="re" dtype_id="1"/>
+          <varref fl="d22" loc="d,22,29,22,33" name="data" dtype_id="3"/>
+          <const fl="d22" loc="d,22,36,22,38" name="8&apos;h0" dtype_id="3"/>
+        </cond>
+        <varref fl="d22" loc="d,22,8,22,11" name="out" dtype_id="3"/>
+      </contassign>
+    </module>
+    <typetable fl="a0" loc="a,0,0,0,0">
+      <basicdtype fl="c13" loc="c,13,8,13,9" id="1" name="logic"/>
+      <basicdtype fl="c4" loc="c,4,11,4,12" id="2" name="logic" left="2" right="0"/>
+      <basicdtype fl="c5" loc="c,5,11,5,12" id="3" name="logic" left="7" right="0"/>
+      <basicdtype fl="c16" loc="c,16,19,16,20" id="4" name="logic" left="1" right="0"/>
+      <basicdtype fl="c16" loc="c,16,19,16,20" id="5" name="logic" left="31" right="0"/>
+    </typetable>
+  </netlist>
+</verilator_xml>

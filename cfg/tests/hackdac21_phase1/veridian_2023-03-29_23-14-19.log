@@ -1,0 +1,10 @@
+INFO [veridian] starting veridian...
+INFO [veridian::server] found config file /home/joey/Desktop/cdfg/.vscode/settings.json
+INFO [veridian::server] reading config
+INFO [veridian::server] parsing JSON
+INFO [veridian::server] Included directories:
+INFO [veridian::server] 
+INFO [veridian::server] log level: info
+INFO [veridian::server] enabled linting with slang
+INFO [veridian::server] formatting unavailable
+INFO [tower_lsp::generated_impl] language server initialized

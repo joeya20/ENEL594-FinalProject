@@ -1,0 +1,15 @@
+[2023-01-26 14:13:42] This is codeql database analyze codeql-RTG011 --format=csv --output=res.csv ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:13:42] Log file was started late.
+[2023-01-26 14:13:42] [PROGRESS] database analyze> Running queries.
+[2023-01-26 14:13:42] Running plumbing command: codeql database run-queries --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml --no-rerun -- /home/joey/Desktop/test/RTG011/codeql-RTG011 ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:13:42] Calling plumbing command: codeql resolve ram --format=json
+[2023-01-26 14:13:42] Plumbing command codeql resolve ram completed:
+                      [
+                        "-J-Xmx1966M",
+                        "--off-heap-ram=1966"
+                      ]
+[2023-01-26 14:13:42] Spawning plumbing command: execute queries -J-Xmx1966M --off-heap-ram=1966 --verbosity=progress --logdir=/home/joey/Desktop/test/RTG011/codeql-RTG011/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/joey/Desktop/test/RTG011/qlconfig.yml --no-rerun --output=/home/joey/Desktop/test/RTG011/codeql-RTG011/results -- /home/joey/Desktop/test/RTG011/codeql-RTG011/db-cpp ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql
+[2023-01-26 14:13:43] [ERROR] Spawned process exited abnormally (code 2; tried to run: [/tools/codeql/tools/linux64/java/bin/java, -Xmx1966M, -Djava.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, -cp, /tools/codeql/tools/codeql.jar, com.semmle.cli2.CodeQL, env_argv, execute, queries, -J-Xmx1966M, _, _, _, _, _, _, _, --no-rerun, _, --, /home/joey/Desktop/test/RTG011/codeql-RTG011/db-cpp, ../vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql])
+[2023-01-26 14:13:43] Plumbing command codeql execute queries terminated with status 2.
+[2023-01-26 14:13:43] Plumbing command codeql database run-queries completed with status 2.
+[2023-01-26 14:13:43] Exiting with code 2

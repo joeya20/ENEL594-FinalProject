@@ -1,0 +1,51 @@
+[2023-01-26 14:23:04] This is codeql execute queries -J-Xmx1966M --off-heap-ram=1966 --verbosity=progress --logdir=/home/joey/Desktop/test/RTG011/codeql-RTG011/log --evaluator-log-level=5 --insecurely-execute-ml-model-checksums= --warnings=show --qlconfig-file=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlconfig.yml --no-rerun --output=/home/joey/Desktop/test/RTG011/codeql-RTG011/results -- /home/joey/Desktop/test/RTG011/codeql-RTG011/db-cpp dataflow.ql
+[2023-01-26 14:23:04] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlconfig.yml --format=json -- dataflow.ql
+[2023-01-26 14:23:04] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-cpp at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp.
+[2023-01-26 14:23:04] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql"
+                      ]
+[2023-01-26 14:23:04] Creating executor with 1 threads.
+[2023-01-26 14:23:04] Calling plumbing command: codeql resolve extensions --qlconfig-file=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlconfig.yml --insecurely-execute-ml-model-checksums= dataflow.ql
+[2023-01-26 14:23:04] Calling plumbing command: codeql resolve queries --qlconfig-file=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlconfig.yml --format startingpacks -- dataflow.ql
+[2023-01-26 14:23:04] [PROGRESS] resolve queries> Recording pack reference getting-started/codeql-extra-queries-cpp at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp.
+[2023-01-26 14:23:04] Plumbing command codeql resolve queries completed:
+                      [
+                        "/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp"
+                      ]
+[2023-01-26 14:23:04] Plumbing command codeql resolve extensions completed:
+                      {
+                        "models" : [ ],
+                        "data" : { }
+                      }
+[2023-01-26 14:23:04] [DETAILS] execute queries> Did not find any ML models.
+[2023-01-26 14:23:04] [SPAMMIER] execute queries> Data extensions for query 'dataflow.ql' in 'getting-started/codeql-extra-queries-cpp':
+                      {}
+[2023-01-26 14:23:04] Calling plumbing command: codeql resolve library-path --qlconfig-file=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlconfig.yml --query=/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql --format=json
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> Resolving query at normalized path /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql.
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> Found enclosing pack 'getting-started/codeql-extra-queries-cpp' at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp.
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> Adding compilation cache at /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/.cache.
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> Resolving library dependencies from /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/qlpack.yml.
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> QL pack dependencies for /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp resolved OK.
+[2023-01-26 14:23:04] [DETAILS] resolve library-path> Found dbscheme through QL packs: /home/joey/Desktop/test/vscode-codeql-starter/ql/cpp/ql/lib/semmlecode.cpp.dbscheme.
+[2023-01-26 14:23:04] Plumbing command codeql resolve library-path completed:
+                      {
+                        "libraryPath" : [
+                          "/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp",
+                          "/home/joey/Desktop/test/vscode-codeql-starter/ql/cpp/ql/lib",
+                          "/home/joey/Desktop/test/vscode-codeql-starter/ql/shared/ssa"
+                        ],
+                        "dbscheme" : "/home/joey/Desktop/test/vscode-codeql-starter/ql/cpp/ql/lib/semmlecode.cpp.dbscheme",
+                        "compilationCache" : [
+                          "/home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/.cache"
+                        ],
+                        "relativeName" : "getting-started/codeql-extra-queries-cpp/dataflow.ql",
+                        "qlPackName" : "getting-started/codeql-extra-queries-cpp"
+                      }
+[2023-01-26 14:23:04] [PROGRESS] execute queries> [1/1] No need to rerun /home/joey/Desktop/test/vscode-codeql-starter/codeql-custom-queries-cpp/dataflow.ql.
+[2023-01-26 14:23:04] [PROGRESS] execute queries> Shutting down query evaluator.
+[2023-01-26 14:23:04] Sequence stamp origin is -6360811413216936950
+[2023-01-26 14:23:04] Pausing evaluation to close the cache at sequence stamp o+0
+[2023-01-26 14:23:04] The disk cache is freshly trimmed; leave it be.
+[2023-01-26 14:23:04] Unpausing evaluation
+[2023-01-26 14:23:04] Terminating normally.

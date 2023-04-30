@@ -1,0 +1,1429 @@
+[T 14:16:28 191527] CodeQL CLI version 2.11.6
+[T 14:16:28 191527] Initializing tracer.
+[T 14:16:28 191527] Initialising tags...
+[T 14:16:28 191527] ID set to 000000000002EC27_0000000000000001 (parent root)
+[T 14:16:28 191527] Initializing tracer.
+[T 14:16:28 191527] Initialising tags...
+[T 14:16:28 191527] ID set to 000000000002EC27_0000000000000002 (parent root)
+[T 14:16:28 191527] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 14:16:28 191527] ==== Candidate to intercept: /tools/codeql/tools/linux64/runner-linux (canonical: /tools/codeql/tools/linux64/runner-linux) ====
+[T 14:16:28 191527] Executing the following tracer actions:
+[T 14:16:28 191527] Tracer actions:
+[T 14:16:28 191527] pre_invocations(0)
+[T 14:16:28 191527] post_invocations(0)
+[T 14:16:28 191527] trace_languages(1): [cpp]
+[T 14:16:28 191527] Initializing tracer.
+[T 14:16:28 191527] Initialising tags...
+[T 14:16:28 191527] ID set to 000000000002EC27_0000000000000003 (parent 000000000002EC27_0000000000000002)
+[T 14:16:28 191527] ==== Candidate to intercept: make (canonical: make) ====
+[T 14:16:28 191527] Will try to resolve make in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis_HLS/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/aietools/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vivado/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/DocNav/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/verilator/4.210/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /home/joey/oss-cad-suite/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/codeql/make...
+[T 14:16:28 191527]  -> path lookup for make as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/make...
+[T 14:16:28 191527]  -> path lookup for make as /home/joey/.local/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /home/joey/.cargo/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis_HLS/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vitis/2022.1/aietools/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/Vivado/2022.1/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/Xilinx/DocNav/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/verilator/4.210/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /home/joey/oss-cad-suite/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /tools/codeql/make...
+[T 14:16:28 191527]  -> path lookup for make as /usr/local/sbin/make...
+[T 14:16:28 191527]  -> path lookup for make as /usr/local/bin/make...
+[T 14:16:28 191527]  -> path lookup for make as /usr/sbin/make...
+[T 14:16:28 191527]  -> path lookup for make as /usr/bin/make...
+[T 14:16:28 191527] Resolved barename make to /usr/bin/make
+[T 14:16:28 191527] Executing the following tracer actions:
+[T 14:16:28 191527] Tracer actions:
+[T 14:16:28 191527] pre_invocations(0)
+[T 14:16:28 191527] post_invocations(0)
+[T 14:16:28 191527] trace_languages(1): [cpp]
+[T 14:16:28 191530] Initializing tracer.
+[T 14:16:28 191530] Initialising tags...
+[T 14:16:28 191530] ID set to 000000000002EC2A_0000000000000001 (parent 000000000002EC27_0000000000000003)
+[T 14:16:28 191530] ==== Candidate to intercept: /bin/sh (canonical: /usr/bin/dash) ====
+[T 14:16:28 191530] Executing the following tracer actions:
+[T 14:16:28 191530] Tracer actions:
+[T 14:16:28 191530] pre_invocations(0)
+[T 14:16:28 191530] post_invocations(0)
+[T 14:16:28 191530] trace_languages(1): [cpp]
+[T 14:16:28 191531] Initializing tracer.
+[T 14:16:28 191531] Initialising tags...
+[T 14:16:28 191531] ID set to 000000000002EC2B_0000000000000001 (parent 000000000002EC2A_0000000000000001)
+[T 14:16:28 191531] ==== Candidate to intercept: /usr/bin/perl (canonical: /usr/bin/perl) ====
+[T 14:16:28 191531] Executing the following tracer actions:
+[T 14:16:28 191531] Tracer actions:
+[T 14:16:28 191531] pre_invocations(0)
+[T 14:16:28 191531] post_invocations(0)
+[T 14:16:28 191531] trace_languages(1): [cpp]
+[T 14:16:28 191532] Initializing tracer.
+[T 14:16:28 191532] Initialising tags...
+[T 14:16:28 191532] ID set to 000000000002EC2C_0000000000000001 (parent 000000000002EC27_0000000000000003)
+[T 14:16:28 191532] ==== Candidate to intercept: g++-11 (canonical: g++-11) ====
+[T 14:16:28 191532] Will try to resolve g++-11 in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis_HLS/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/aietools/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vivado/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/DocNav/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/verilator/4.210/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /home/joey/oss-cad-suite/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/codeql/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /home/joey/.local/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /home/joey/.cargo/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis_HLS/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vitis/2022.1/aietools/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/Vivado/2022.1/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/Xilinx/DocNav/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/verilator/4.210/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /home/joey/oss-cad-suite/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /tools/codeql/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /usr/local/sbin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /usr/local/bin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /usr/sbin/g++-11...
+[T 14:16:28 191532]  -> path lookup for g++-11 as /usr/bin/g++-11...
+[T 14:16:28 191532] Resolved barename g++-11 to /usr/bin/g++-11
+[T 14:16:28 191532] Lua: === Intercepted call to /usr/bin/g++-11 ===
+[T 14:16:28 191532] Executing the following tracer actions:
+[T 14:16:28 191532] Tracer actions:
+[T 14:16:28 191532] pre_invocations(0)
+[T 14:16:28 191532] post_invocations(1)
+[T 14:16:28 191532] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/g++-11, -I., -MMD, -I/tools/verilator/4.210/share/verilator/include, -I/tools/verilator/4.210/share/verilator/include/vltstd, -DVM_COVERAGE=0, -DVM_SC=0, -DVM_TRACE=0, -DVM_TRACE_FST=0, -faligned-new, -fcf-protection=none, -Wno-bool-operation, -Wno-sign-compare, -Wno-uninitialized, -Wno-unused-but-set-variable, -Wno-unused-parameter, -Wno-unused-variable, -Wno-shadow, -std=gnu++14, -Os, -c, -o, VopenMSP430__ALL.o, VopenMSP430__ALL.cpp]
+[T 14:16:28 191532] trace_languages(1): [cpp]
+[T 14:16:28 191534] Initializing tracer.
+[T 14:16:28 191534] Initialising tags...
+[T 14:16:28 191534] ID set to 000000000002EC2E_0000000000000001 (parent 000000000002EC2C_0000000000000001)
+[T 14:16:28 191534] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:28 191534] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:28 191534] Executing the following tracer actions:
+[T 14:16:28 191534] Tracer actions:
+[T 14:16:28 191534] pre_invocations(0)
+[T 14:16:28 191534] post_invocations(1)
+[T 14:16:28 191534] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -quiet, -I, ., -I, /tools/verilator/4.210/share/verilator/include, -I, /tools/verilator/4.210/share/verilator/include/vltstd, -imultiarch, x86_64-linux-gnu, -MMD, VopenMSP430__ALL.d, -MQ, VopenMSP430__ALL.o, -D_GNU_SOURCE, -D, VM_COVERAGE=0, -D, VM_SC=0, -D, VM_TRACE=0, -D, VM_TRACE_FST=0, VopenMSP430__ALL.cpp, -quiet, -dumpbase, VopenMSP430__ALL.cpp, -dumpbase-ext, .cpp, -mtune=generic, -march=x86-64, -Os, -Wno-bool-operation, -Wno-sign-compare, -Wno-uninitialized, -Wno-unused-but-set-variable, -Wno-unused-parameter, -Wno-unused-variable, -Wno-shadow, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -o, /tmp/cc5AKlI1.s]
+[T 14:16:28 191534] trace_languages(1): [cpp]
+[T 14:16:30 191585] Attempting to switch stdout/stderr to 4...
+[T 14:16:30 191585] Initializing tracer.
+[T 14:16:30 191585] Initialising tags...
+[T 14:16:30 191585] ID set to 000000000002EC61_0000000000000001 (parent 000000000002EC2E_0000000000000001)
+[E 14:16:30 191585] CodeQL C/C++ Extractor 2.11.6
+[E 14:16:30 191585] Current directory: /home/joey/Desktop/test/RTD012/obj_dir
+[E 14:16:30 191585] Command: /tools/codeql/cpp/tools/linux64/extractor --mimic /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -I . -I /tools/verilator/4.210/share/verilator/include -I /tools/verilator/4.210/share/verilator/include/vltstd -imultiarch x86_64-linux-gnu -MMD VopenMSP430__ALL.d -MQ VopenMSP430__ALL.o -D_GNU_SOURCE -D VM_COVERAGE=0 -D VM_SC=0 -D VM_TRACE=0 -D VM_TRACE_FST=0 VopenMSP430__ALL.cpp -quiet -dumpbase VopenMSP430__ALL.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -Os -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow '-std=gnu++14' -faligned-new=1 -fcf-protection=none -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/cc5AKlI1.s
+[T 14:16:30 191586] Initializing tracer.
+[T 14:16:30 191586] Initialising tags...
+[T 14:16:30 191586] ID set to 000000000002EC62_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191586] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191586] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191586] Executing the following tracer actions:
+[T 14:16:30 191586] Tracer actions:
+[T 14:16:30 191586] pre_invocations(0)
+[T 14:16:30 191586] post_invocations(1)
+[T 14:16:30 191586] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, --version]
+[T 14:16:30 191586] trace_languages(1): [cpp]
+[T 14:16:30 191588] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191588] Initializing tracer.
+[T 14:16:30 191588] Initialising tags...
+[T 14:16:30 191588] ID set to 000000000002EC64_0000000000000001 (parent 000000000002EC62_0000000000000001)
+[E 14:16:30 191588] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191586] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191589] Initializing tracer.
+[T 14:16:30 191589] Initialising tags...
+[T 14:16:30 191589] ID set to 000000000002EC65_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191589] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191589] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191589] Executing the following tracer actions:
+[T 14:16:30 191589] Tracer actions:
+[T 14:16:30 191589] pre_invocations(0)
+[T 14:16:30 191589] post_invocations(1)
+[T 14:16:30 191589] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, --help]
+[T 14:16:30 191589] trace_languages(1): [cpp]
+[T 14:16:30 191591] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191591] Initializing tracer.
+[T 14:16:30 191591] Initialising tags...
+[T 14:16:30 191591] ID set to 000000000002EC67_0000000000000001 (parent 000000000002EC65_0000000000000001)
+[E 14:16:30 191591] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191589] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191592] Initializing tracer.
+[T 14:16:30 191592] Initialising tags...
+[T 14:16:30 191592] ID set to 000000000002EC68_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191592] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191592] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191592] Executing the following tracer actions:
+[T 14:16:30 191592] Tracer actions:
+[T 14:16:30 191592] pre_invocations(0)
+[T 14:16:30 191592] post_invocations(1)
+[T 14:16:30 191592] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -version, --help]
+[T 14:16:30 191592] trace_languages(1): [cpp]
+[T 14:16:30 191594] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191594] Initializing tracer.
+[T 14:16:30 191594] Initialising tags...
+[T 14:16:30 191594] ID set to 000000000002EC6A_0000000000000001 (parent 000000000002EC68_0000000000000001)
+[E 14:16:30 191594] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191592] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191595] Initializing tracer.
+[T 14:16:30 191595] Initialising tags...
+[T 14:16:30 191595] ID set to 000000000002EC6B_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191595] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191595] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191595] Executing the following tracer actions:
+[T 14:16:30 191595] Tracer actions:
+[T 14:16:30 191595] pre_invocations(0)
+[T 14:16:30 191595] post_invocations(1)
+[T 14:16:30 191595] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -nostdinc, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_2_191585_42936.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_1_191585_42912.c]
+[T 14:16:30 191595] trace_languages(1): [cpp]
+[T 14:16:30 191597] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191597] Initializing tracer.
+[T 14:16:30 191597] Initialising tags...
+[T 14:16:30 191597] ID set to 000000000002EC6D_0000000000000001 (parent 000000000002EC6B_0000000000000001)
+[E 14:16:30 191597] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191595] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191598] Initializing tracer.
+[T 14:16:30 191598] Initialising tags...
+[T 14:16:30 191598] ID set to 000000000002EC6E_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191598] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191598] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191598] Executing the following tracer actions:
+[T 14:16:30 191598] Tracer actions:
+[T 14:16:30 191598] pre_invocations(0)
+[T 14:16:30 191598] post_invocations(1)
+[T 14:16:30 191598] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -nostdinc, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_4_191585_64422.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_3_191585_64392.c]
+[T 14:16:30 191598] trace_languages(1): [cpp]
+[T 14:16:30 191600] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191600] Initializing tracer.
+[T 14:16:30 191600] Initialising tags...
+[T 14:16:30 191600] ID set to 000000000002EC70_0000000000000001 (parent 000000000002EC6E_0000000000000001)
+[E 14:16:30 191600] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191598] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 14:16:30 191585] Checking whether C compilation already happened.
+[E 14:16:30 191585] Checking for tag c-compilation-happened
+[E 14:16:30 191585] Checking CODEQL_TRACER_DB_ID 000000000002EC2E_0000000000000001
+[E 14:16:30 191585] Locking DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Locked DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Unlocking DB
+[E 14:16:30 191585] Unlocked DB
+[E 14:16:30 191585] Looks like C compilation didn't already happen.
+[E 14:16:30 191585] Checking whether C compilation has been attempted.
+[E 14:16:30 191585] Checking for tag c-compilation-attempted
+[E 14:16:30 191585] Checking CODEQL_TRACER_DB_ID 000000000002EC2E_0000000000000001
+[E 14:16:30 191585] Locking DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Locked DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Unlocking DB
+[E 14:16:30 191585] Unlocked DB
+[E 14:16:30 191585] Marking C compilation as attempted.
+[E 14:16:30 191585] Setting tag c-compilation-attempted
+[E 14:16:30 191585] Starting from CODEQL_TRACER_DB_ID 000000000002EC2E_0000000000000001
+[E 14:16:30 191585] Locking DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Locked DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:30 191585] Set tag for 000000000002EC2E_0000000000000001
+[E 14:16:30 191585] Set tag for 000000000002EC2C_0000000000000001
+[E 14:16:30 191585] Set tag for 000000000002EC27_0000000000000003
+[E 14:16:30 191585] Set tag for 000000000002EC27_0000000000000002
+[E 14:16:30 191585] Set tag for root
+[E 14:16:30 191585] Unlocking DB
+[E 14:16:30 191585] Unlocked DB
+[T 14:16:30 191602] Initializing tracer.
+[T 14:16:30 191602] Initialising tags...
+[T 14:16:30 191602] ID set to 000000000002EC72_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191602] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191602] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191602] Executing the following tracer actions:
+[T 14:16:30 191602] Tracer actions:
+[T 14:16:30 191602] pre_invocations(0)
+[T 14:16:30 191602] post_invocations(1)
+[T 14:16:30 191602] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -v, -fsyntax-only, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_6_191585_84642]
+[T 14:16:30 191602] trace_languages(1): [cpp]
+[T 14:16:30 191604] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191604] Initializing tracer.
+[T 14:16:30 191604] Initialising tags...
+[T 14:16:30 191604] ID set to 000000000002EC74_0000000000000001 (parent 000000000002EC72_0000000000000001)
+[E 14:16:30 191604] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191602] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191605] Initializing tracer.
+[T 14:16:30 191605] Initialising tags...
+[T 14:16:30 191605] ID set to 000000000002EC75_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191605] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191605] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191605] Executing the following tracer actions:
+[T 14:16:30 191605] Tracer actions:
+[T 14:16:30 191605] pre_invocations(0)
+[T 14:16:30 191605] post_invocations(1)
+[T 14:16:30 191605] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -E, -dM, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_7_191585_101251]
+[T 14:16:30 191605] trace_languages(1): [cpp]
+[T 14:16:30 191607] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191607] Initializing tracer.
+[T 14:16:30 191607] Initialising tags...
+[T 14:16:30 191607] ID set to 000000000002EC77_0000000000000001 (parent 000000000002EC75_0000000000000001)
+[E 14:16:30 191607] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191605] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191608] Initializing tracer.
+[T 14:16:30 191608] Initialising tags...
+[T 14:16:30 191608] ID set to 000000000002EC78_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191608] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191608] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191608] Executing the following tracer actions:
+[T 14:16:30 191608] Tracer actions:
+[T 14:16:30 191608] pre_invocations(0)
+[T 14:16:30 191608] post_invocations(1)
+[T 14:16:30 191608] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -fmax-errors=0, -Wreturn-type, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_8_191585_119576.h.gch, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_8_191585_119576.h]
+[T 14:16:30 191608] trace_languages(1): [cpp]
+[T 14:16:30 191610] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191610] Initializing tracer.
+[T 14:16:30 191610] Initialising tags...
+[T 14:16:30 191610] ID set to 000000000002EC7A_0000000000000001 (parent 000000000002EC78_0000000000000001)
+[E 14:16:30 191610] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191608] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+Warning: Only 0 reserved identifiers found in precompiled header file.
+[T 14:16:30 191611] Initializing tracer.
+[T 14:16:30 191611] Initialising tags...
+[T 14:16:30 191611] ID set to 000000000002EC7B_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191611] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191611] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191611] Executing the following tracer actions:
+[T 14:16:30 191611] Tracer actions:
+[T 14:16:30 191611] pre_invocations(0)
+[T 14:16:30 191611] post_invocations(1)
+[T 14:16:30 191611] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_10_191585_137066.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_9_191585_137043.c]
+[T 14:16:30 191611] trace_languages(1): [cpp]
+[T 14:16:30 191613] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191613] Initializing tracer.
+[T 14:16:30 191613] Initialising tags...
+[T 14:16:30 191613] ID set to 000000000002EC7D_0000000000000001 (parent 000000000002EC7B_0000000000000001)
+[E 14:16:30 191613] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191611] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191614] Initializing tracer.
+[T 14:16:30 191614] Initialising tags...
+[T 14:16:30 191614] ID set to 000000000002EC7E_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191614] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191614] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191614] Executing the following tracer actions:
+[T 14:16:30 191614] Tracer actions:
+[T 14:16:30 191614] pre_invocations(0)
+[T 14:16:30 191614] post_invocations(1)
+[T 14:16:30 191614] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_12_191585_156111.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_11_191585_156072.c]
+[T 14:16:30 191614] trace_languages(1): [cpp]
+[T 14:16:30 191616] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191616] Initializing tracer.
+[T 14:16:30 191616] Initialising tags...
+[T 14:16:30 191616] ID set to 000000000002EC80_0000000000000001 (parent 000000000002EC7E_0000000000000001)
+[E 14:16:30 191616] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191614] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191617] Initializing tracer.
+[T 14:16:30 191617] Initialising tags...
+[T 14:16:30 191617] ID set to 000000000002EC81_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191617] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191617] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191617] Executing the following tracer actions:
+[T 14:16:30 191617] Tracer actions:
+[T 14:16:30 191617] pre_invocations(0)
+[T 14:16:30 191617] post_invocations(1)
+[T 14:16:30 191617] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_14_191585_176649.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_13_191585_176624.c]
+[T 14:16:30 191617] trace_languages(1): [cpp]
+[T 14:16:30 191619] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191619] Initializing tracer.
+[T 14:16:30 191619] Initialising tags...
+[T 14:16:30 191619] ID set to 000000000002EC83_0000000000000001 (parent 000000000002EC81_0000000000000001)
+[E 14:16:30 191619] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191617] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191620] Initializing tracer.
+[T 14:16:30 191620] Initialising tags...
+[T 14:16:30 191620] ID set to 000000000002EC84_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191620] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191620] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191620] Executing the following tracer actions:
+[T 14:16:30 191620] Tracer actions:
+[T 14:16:30 191620] pre_invocations(0)
+[T 14:16:30 191620] post_invocations(1)
+[T 14:16:30 191620] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_16_191585_199483.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_15_191585_199459.c]
+[T 14:16:30 191620] trace_languages(1): [cpp]
+[T 14:16:30 191622] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191622] Initializing tracer.
+[T 14:16:30 191622] Initialising tags...
+[T 14:16:30 191622] ID set to 000000000002EC86_0000000000000001 (parent 000000000002EC84_0000000000000001)
+[E 14:16:30 191622] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191620] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191623] Initializing tracer.
+[T 14:16:30 191623] Initialising tags...
+[T 14:16:30 191623] ID set to 000000000002EC87_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191623] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191623] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191623] Executing the following tracer actions:
+[T 14:16:30 191623] Tracer actions:
+[T 14:16:30 191623] pre_invocations(0)
+[T 14:16:30 191623] post_invocations(1)
+[T 14:16:30 191623] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_18_191585_215825.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_17_191585_215797.c]
+[T 14:16:30 191623] trace_languages(1): [cpp]
+[T 14:16:30 191625] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191625] Initializing tracer.
+[T 14:16:30 191625] Initialising tags...
+[T 14:16:30 191625] ID set to 000000000002EC89_0000000000000001 (parent 000000000002EC87_0000000000000001)
+[E 14:16:30 191625] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191623] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:30 191626] Initializing tracer.
+[T 14:16:30 191626] Initialising tags...
+[T 14:16:30 191626] ID set to 000000000002EC8A_0000000000000001 (parent 000000000002EC61_0000000000000001)
+[T 14:16:30 191626] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:30 191626] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:30 191626] Executing the following tracer actions:
+[T 14:16:30 191626] Tracer actions:
+[T 14:16:30 191626] pre_invocations(0)
+[T 14:16:30 191626] post_invocations(1)
+[T 14:16:30 191626] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -imultiarch, x86_64-linux-gnu, -mtune=generic, -march=x86-64, -Os, -std=gnu++14, -faligned-new=1, -fcf-protection=none, -fasynchronous-unwind-tables, -fstack-protector-strong, -fstack-clash-protection, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_20_191585_237454.o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_19_191585_237431.c]
+[T 14:16:30 191626] trace_languages(1): [cpp]
+[T 14:16:30 191628] Attempting to switch stdout/stderr to 7...
+[T 14:16:30 191628] Initializing tracer.
+[T 14:16:30 191628] Initialising tags...
+[T 14:16:30 191628] ID set to 000000000002EC8C_0000000000000001 (parent 000000000002EC8A_0000000000000001)
+[E 14:16:30 191628] Mimicry classification suppression detected; exiting.
+[T 14:16:30 191626] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 14:16:30 191585] Processed command line: /tools/codeql/cpp/tools/linux64/extractor --trapfolder /home/joey/Desktop/test/RTD012/codeql-RTD012/trap/cpp --src_archive /home/joey/Desktop/test/RTD012/codeql-RTD012/src --mimic_config /home/joey/Desktop/test/RTD012/codeql-RTD012/working/compiler_mimic_cache/6f0dfeabcf73 --object_filename /tmp/cc5AKlI1.s -w --error_limit 1000 --disable_system_macros --variadic_macros '--c++14' '--g++' --gnu_version 110100 --target linux_x86_64 -D__SSP_STRONG__=3 '-D__DBL_MIN_EXP__=(-1021)' -D__cpp_attributes=200809L -D__UINT_LEAST16_MAX__=0xffff -D__ATOMIC_ACQUIRE=2 -D__FLT128_MAX_10_EXP__=4932 -D__FLT_MIN__=1.17549435082228750796873653722224568e-38F -D__GCC_IEC_559_COMPLEX=2 -D__cpp_aggregate_nsdmi=201304L '-D__UINT_LEAST8_TYPE__=unsigned char' -D__SIZEOF_FLOAT80__=16 '-D__INTMAX_C(c)=c ## L' -D__CHAR_BIT__=8 -D__UINT8_MAX__=0xff -D__SCHAR_WIDTH__=8 -D__WINT_MAX__=0xffffffffU '-D__FLT32_MIN_EXP__=(-125)' -D__cpp_static_assert=200410L -D__ORDER_LITTLE_ENDIAN__=1234 -D__SIZE_MAX__=0xffffffffffffffffUL -D__WCHAR_MAX__=0x7fffffff -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1 '-D__DBL_DENORM_MIN__=double(4.94065645841246544176568792868221372e-324L)' -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1 -D__GCC_ATOMIC_CHAR_LOCK_FREE=2 -D__GCC_IEC_559=2 -D__FLT32X_DECIMAL_DIG__=17 -D__FLT_EVAL_METHOD__=0 -D__cpp_binary_literals=201304L -D__FLT64_DECIMAL_DIG__=17 -D__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__cpp_variadic_templates=200704L -D__UINT_FAST64_MAX__=0xffffffffffffffffUL -D__SIG_ATOMIC_TYPE__=int '-D__DBL_MIN_10_EXP__=(-307)' -D__FINITE_MATH_ONLY__=0 -D__cpp_variable_templates=201304L -D__FLT32X_MAX_EXP__=1024 -D__FLT32_HAS_DENORM__=1 -D__UINT_FAST8_MAX__=0xff -D__cpp_rvalue_reference=200610L -D__FLT32_MAX_10_EXP__=38 -D__DEC64_MAX_EXP__=385 '-D__INT8_C(c)=c' -D__INT_LEAST8_WIDTH__=8 -D__UINT_LEAST64_MAX__=0xffffffffffffffffUL -D__INT_LEAST8_MAX__=0x7f -D__SHRT_MAX__=0x7fff '-D__LDBL_MAX__=1.18973149535723176502126385303097021e+4932L' -D__FLT64X_MAX_10_EXP__=4932 -D__LDBL_IS_IEC_60559__=2 -D__FLT64X_HAS_QUIET_NAN__=1 -D__UINT_LEAST8_MAX__=0xff -D__GCC_ATOMIC_BOOL_LOCK_FREE=2 -D__FLT128_DENORM_MIN__=6.47517511943802511092443895822764655e-4966F128 '-D__UINTMAX_TYPE__=long unsigned int' -D__linux=1 -D__DEC32_EPSILON__=1E-6DF -D__FLT_EVAL_METHOD_TS_18661_3__=0 -D__OPTIMIZE__=1 -D__unix=1 -D__UINT32_MAX__=0xffffffffU -D__GXX_EXPERIMENTAL_CXX0X__=1 '-D__FLT128_MIN_EXP__=(-16381)' -D__WINT_MIN__=0U '-D__FLT128_MIN_10_EXP__=(-4931)' -D__FLT32X_IS_IEC_60559__=2 -D__INT_LEAST16_WIDTH__=16 -D__SCHAR_MAX__=0x7f -D__FLT128_MANT_DIG__=113 '-D__WCHAR_MIN__=(-__WCHAR_MAX__ - 1)' '-D__INT64_C(c)=c ## L' -D__GCC_ATOMIC_POINTER_LOCK_FREE=2 -D_FORTIFY_SOURCE=2 -D__FLT32X_MANT_DIG__=53 -D__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__cpp_aligned_new=201606L -D__USER_LABEL_PREFIX__= -D__FLT64X_EPSILON__=1.08420217248550443400745280086994171e-19F64x '-D__DEC64_MIN_EXP__=(-382)' -D__cpp_decltype_auto=201304L -D__DBL_DIG__=15 -D__FLT32_DIG__=6 -D__FLT_EPSILON__=1.19209289550781250000000000000000000e-7F -D__GXX_WEAK__=1 -D__SHRT_WIDTH__=16 -D__FLT32_IS_IEC_60559__=2 -D__LDBL_MIN__=3.36210314311209350626267781732175260e-4932L -D__DBL_IS_IEC_60559__=2 -D__DEC32_MAX__=9.999999E96DF -D__cpp_threadsafe_static_init=200806L -D__FLT64X_DENORM_MIN__=3.64519953188247460252840593361941982e-4951F64x -D__FLT32X_HAS_INFINITY__=1 -D__INT32_MAX__=0x7fffffff -D__unix__=1 -D__INT_WIDTH__=32 -D__SIZEOF_LONG__=8 -D__STDC_IEC_559__=1 -D__STDC_ISO_10646__=201706L '-D__UINT16_C(c)=c' -D__DECIMAL_DIG__=21 -D__STDC_IEC_559_COMPLEX__=1 -D__FLT64_EPSILON__=2.22044604925031308084726333618164062e-16F64 -D__gnu_linux__=1 -D__INT16_MAX__=0x7fff '-D__FLT64_MIN_EXP__=(-1021)' '-D__FLT64X_MIN_10_EXP__=(-4931)' -D__LDBL_HAS_QUIET_NAN__=1 -D__FLT64_MANT_DIG__=53 -D__FLT64X_MANT_DIG__=64 -D__GXX_RTTI=1 -D__pie__=2 -D__MMX__=1 -D__FLT_HAS_DENORM__=1 -D__SIZEOF_LONG_DOUBLE__=16 -D__BIGGEST_ALIGNMENT__=16 -D__STDC_UTF_16__=1 -D__FLT64_MAX_10_EXP__=308 -D__cpp_delegating_constructors=200604L -D__FLT32_HAS_INFINITY__=1 '-D__DBL_MAX__=double(1.79769313486231570814527423731704357e+308L)' -D__cpp_raw_strings=200710L -D__INT_FAST32_MAX__=0x7fffffffffffffffL -D__DBL_HAS_INFINITY__=1 -D__SIZEOF_FLOAT__=4 -D__HAVE_SPECULATION_SAFE_VALUE=1 '-D__DEC32_MIN_EXP__=(-94)' -D__INTPTR_WIDTH__=64 -D__FLT64X_HAS_INFINITY__=1 -D__UINT_LEAST32_MAX__=0xffffffffU -D__FLT32X_HAS_DENORM__=1 '-D__INT_FAST16_TYPE__=long int' -D__MMX_WITH_SSE__=1 -D__LDBL_HAS_DENORM__=1 -D__cpp_ref_qualifiers=200710L -D__DEC32_MIN__=1E-95DF -D__DEPRECATED=1 -D__cpp_rvalue_references=200610L -D__DBL_MAX_EXP__=1024 -D__WCHAR_WIDTH__=32 '-D__FLT32_MAX__=3.40282346638528859811704183484516925e+38F32' -D__DEC128_EPSILON__=1E-33DL -D__SSE2_MATH__=1 -D__ATOMIC_HLE_RELEASE=131072 -D__PTRDIFF_MAX__=0x7fffffffffffffffL -D__amd64=1 -D__ATOMIC_HLE_ACQUIRE=65536 -D__LONG_LONG_MAX__=0x7fffffffffffffffLL -D__SIZEOF_SIZE_T__=8 -D__cpp_nsdmi=200809L '-D__FLT64X_MIN_EXP__=(-16381)' -D__SIZEOF_WINT_T__=4 -D__LONG_LONG_WIDTH__=64 -D__cpp_initializer_lists=200806L -D__FLT32_MAX_EXP__=128 -D__cpp_hex_float=201603L -D__GXX_ABI_VERSION=1016 -D__FLT128_HAS_INFINITY__=1 '-D__FLT_MIN_EXP__=(-125)' -D__GCC_HAVE_DWARF2_CFI_ASM=1 -D__x86_64=1 -D__cpp_lambdas=200907L '-D__INT_FAST64_TYPE__=long int' -D__FLT64_DENORM_MIN__=4.94065645841246544176568792868221372e-324F64 '-D__DBL_MIN__=double(2.22507385850720138309023271733240406e-308L)' -D__FLT128_EPSILON__=1.92592994438723585305597794258492732e-34F128 '-D__FLT64X_NORM_MAX__=1.18973149535723176502126385303097021e+4932F64x' -D__SIZEOF_POINTER__=8 -D__LP64__=1 -D__DBL_HAS_QUIET_NAN__=1 -D__FLT32X_EPSILON__=2.22044604925031308084726333618164062e-16F32x -D__DECIMAL_BID_FORMAT__=1 '-D__FLT64_MIN_10_EXP__=(-307)' -D__FLT64X_DECIMAL_DIG__=21 -D__DEC128_MIN__=1E-6143DL -D__REGISTER_PREFIX__= -D__UINT16_MAX__=0xffff -D__LDBL_HAS_INFINITY__=1 -D__FLT32_MIN__=1.17549435082228750796873653722224568e-38F32 '-D__UINT8_TYPE__=unsigned char' -D__FLT_DIG__=6 -D__DEC_EVAL_METHOD__=2 -D__DEC128_MAX__=9.999999999999999999999999999999999E6144DL -D__FLT_MANT_DIG__=24 -D__LDBL_DECIMAL_DIG__=21 '-D__UINT64_C(c)=c ## UL' -D__cpp_unicode_characters=200704L -D_STDC_PREDEF_H=1 -D__INT_LEAST32_MAX__=0x7fffffff -D__GCC_ATOMIC_INT_LOCK_FREE=2 -D__FLT128_MAX_EXP__=16384 -D__FLT32_MANT_DIG__=24 -D__FLOAT_WORD_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__FLT128_HAS_DENORM__=1 -D__FLT32_DECIMAL_DIG__=9 -D__FLT128_DIG__=33 '-D__INT32_C(c)=c' -D__DEC64_EPSILON__=1E-15DD -D__ORDER_PDP_ENDIAN__=3412 '-D__DEC128_MIN_EXP__=(-6142)' '-D__INT_FAST32_TYPE__=long int' '-D__UINT_LEAST16_TYPE__=short unsigned int' -Dunix=1 -D__DBL_HAS_DENORM__=1 -D__cpp_rtti=199711L '-D__SIZE_TYPE__=long unsigned int' -D__UINT64_MAX__=0xffffffffffffffffUL -D__FLT_IS_IEC_60559__=2 '-D__GNUC_WIDE_EXECUTION_CHARSET_NAME="UTF-32LE"' -D__FLT64X_DIG__=18 '-D__INT8_TYPE__=signed char' -D__cpp_digit_separators=201309L -D__ELF__=1 -D__GCC_ASM_FLAG_OUTPUTS__=1 '-D__UINT32_TYPE__=unsigned int' -D__FLT_RADIX__=2 '-D__INT_LEAST16_TYPE__=short int' -D__LDBL_EPSILON__=1.08420217248550443400745280086994171e-19L '-D__UINTMAX_C(c)=c ## UL' -D__GLIBCXX_BITSIZE_INT_N_0=128 -D__k8=1 -D__FLT32X_MIN__=2.22507385850720138309023271733240406e-308F32x -D__SIG_ATOMIC_MAX__=0x7fffffff -D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__SIZEOF_PTRDIFF_T__=8 -D__LDBL_DIG__=18 -D__FLT64_IS_IEC_60559__=2 -D__x86_64__=1 '-D__FLT32X_MIN_EXP__=(-1021)' -D__DEC32_SUBNORMAL_MIN__=0.000001E-95DF -D__INT_FAST16_MAX__=0x7fffffffffffffffL -D__FLT64_DIG__=15 -D__UINT_FAST32_MAX__=0xffffffffffffffffUL '-D__UINT_LEAST64_TYPE__=long unsigned int' -D__FLT_HAS_QUIET_NAN__=1 -D__FLT_MAX_10_EXP__=38 -D__LONG_MAX__=0x7fffffffffffffffL -D__FLT64X_HAS_DENORM__=1 -D__DEC128_SUBNORMAL_MIN__=0.000000000000000000000000000000001E-6143DL -D__FLT_HAS_INFINITY__=1 '-D__GNUC_EXECUTION_CHARSET_NAME="UTF-8"' -D__cpp_unicode_literals=200710L '-D__UINT_FAST16_TYPE__=long unsigned int' -D__DEC64_MAX__=9.999999999999999E384DD -D__INT_FAST32_WIDTH__=64 -D__PRAGMA_REDEFINE_EXTNAME=1 -D__SIZE_WIDTH__=64 -D__SEG_FS=1 -D__INT_LEAST16_MAX__=0x7fff -D__DEC64_MANT_DIG__=16 -D__INT64_MAX__=0x7fffffffffffffffL -D__SEG_GS=1 -D__FLT32_DENORM_MIN__=1.40129846432481707092372958328991613e-45F32 -D__SIG_ATOMIC_WIDTH__=32 '-D__INT_LEAST64_TYPE__=long int' '-D__INT16_TYPE__=short int' '-D__INT_LEAST8_TYPE__=signed char' -D__SIZEOF_INT__=4 -D__DEC32_MAX_EXP__=97 -D__INT_FAST8_MAX__=0x7f '-D__FLT128_MAX__=1.18973149535723176508575932662800702e+4932F128' -D__INTPTR_MAX__=0x7fffffffffffffffL -D__cpp_sized_deallocation=201309L -Dlinux=1 -D__FLT64_HAS_QUIET_NAN__=1 '-D__FLT32_MIN_10_EXP__=(-37)' -D__EXCEPTIONS=1 -D__PTRDIFF_WIDTH__=64 -D__LDBL_MANT_DIG__=64 -D__cpp_range_based_for=200907L -D__FLT64_HAS_INFINITY__=1 '-D__FLT64X_MAX__=1.18973149535723176502126385303097021e+4932F64x' -D__STDCPP_DEFAULT_NEW_ALIGNMENT__=16 '-D__SIG_ATOMIC_MIN__=(-__SIG_ATOMIC_MAX__ - 1)' -D__code_model_small__=1 -D__GCC_ATOMIC_LONG_LOCK_FREE=2 -D__DEC32_MANT_DIG__=7 -D__cpp_return_type_deduction=201304L -D__k8__=1 '-D__INTPTR_TYPE__=long int' '-D__UINT16_TYPE__=short unsigned int' -D__WCHAR_TYPE__=int -D__pic__=2 -D__UINTPTR_MAX__=0xffffffffffffffffUL -D__INT_FAST64_WIDTH__=64 -D__cpp_decltype=200707L -D__INT_FAST64_MAX__=0x7fffffffffffffffL -D__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1 '-D__FLT_NORM_MAX__=3.40282346638528859811704183484516925e+38F' -D__FLT64X_MAX_EXP__=16384 '-D__UINT_FAST64_TYPE__=long unsigned int' -D__INT_MAX__=0x7fffffff -D__linux__=1 '-D__INT64_TYPE__=long int' -D__FLT_MAX_EXP__=128 -D__ORDER_BIG_ENDIAN__=4321 -D__DBL_MANT_DIG__=53 -D__cpp_inheriting_constructors=201511L -D__SIZEOF_FLOAT128__=16 -D__INT_LEAST64_MAX__=0x7fffffffffffffffL -D__DEC64_MIN__=1E-383DD '-D__WINT_TYPE__=unsigned int' '-D__UINT_LEAST32_TYPE__=unsigned int' -D__SIZEOF_SHORT__=2 '-D__FLT32_NORM_MAX__=3.40282346638528859811704183484516925e+38F32' -D__SSE__=1 '-D__LDBL_MIN_EXP__=(-16381)' '-D__FLT64_MAX__=1.79769313486231570814527423731704357e+308F64' -D__amd64__=1 -D__WINT_WIDTH__=32 -D__INT_LEAST64_WIDTH__=64 -D__LDBL_MAX_EXP__=16384 -D__FLT32X_MAX_10_EXP__=308 -D__SIZEOF_INT128__=16 -D__FLT64X_IS_IEC_60559__=2 -D__LDBL_MAX_10_EXP__=4932 -D__ATOMIC_RELAXED=0 '-D__DBL_EPSILON__=double(2.22044604925031308084726333618164062e-16L)' -D__FLT128_MIN__=3.36210314311209350626267781732175260e-4932F128 -D_LP64=1 '-D__UINT8_C(c)=c' -D__FLT64_MAX_EXP__=1024 -D__INT_LEAST32_TYPE__=int -D__SIZEOF_WCHAR_T__=4 '-D__FLT128_NORM_MAX__=1.18973149535723176508575932662800702e+4932F128' '-D__FLT64_NORM_MAX__=1.79769313486231570814527423731704357e+308F64' -D__FLT128_HAS_QUIET_NAN__=1 -D__INTMAX_MAX__=0x7fffffffffffffffL '-D__INT_FAST8_TYPE__=signed char' -D__FLT64X_MIN__=3.36210314311209350626267781732175260e-4932F64x -D__STDCPP_THREADS__=1 -D__FLT64_HAS_DENORM__=1 -D__FLT32_EPSILON__=1.19209289550781250000000000000000000e-7F32 -D__DBL_DECIMAL_DIG__=17 -D__STDC_UTF_32__=1 -D__INT_FAST8_WIDTH__=8 -D__FXSR__=1 '-D__FLT32X_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__DBL_NORM_MAX__=double(1.79769313486231570814527423731704357e+308L)' -D__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__INTMAX_WIDTH__=64 -D__cpp_runtime_arrays=198712L '-D__UINT64_TYPE__=long unsigned int' '-D__UINT32_C(c)=c ## U' -D__cpp_alias_templates=200704L -D__FLT_DENORM_MIN__=1.40129846432481707092372958328991613e-45F -D__FLT128_IS_IEC_60559__=2 -D__INT8_MAX__=0x7f -D__LONG_WIDTH__=64 -D__PIC__=2 '-D__UINT_FAST32_TYPE__=long unsigned int' '-D__FLT32X_NORM_MAX__=1.79769313486231570814527423731704357e+308F32x' '-D__FLT_MAX__=3.40282346638528859811704183484516925e+38F' -D__cpp_constexpr=201304L -D__SSE2__=1 -D__INT32_TYPE__=int -D__SIZEOF_DOUBLE__=8 -D__cpp_exceptions=199711L '-D__FLT_MIN_10_EXP__=(-37)' -D__FLT64_MIN__=2.22507385850720138309023271733240406e-308F64 -D__INT_LEAST32_WIDTH__=32 '-D__INTMAX_TYPE__=long int' -D__DEC128_MAX_EXP__=6145 -D__FLT32X_HAS_QUIET_NAN__=1 -D__ATOMIC_CONSUME=1 -D__GLIBCXX_TYPE_INT_N_0=__int128 -D__INT_FAST16_WIDTH__=64 -D__UINTMAX_MAX__=0xffffffffffffffffUL -D__PIE__=2 -D__FLT32X_DENORM_MIN__=4.94065645841246544176568792868221372e-324F32x -D__DBL_MAX_10_EXP__=308 -D__LDBL_DENORM_MIN__=3.64519953188247460252840593361941982e-4951L '-D__INT16_C(c)=c' -D__FLT32X_DIG__=15 '-D__PTRDIFF_TYPE__=long int' -D__ATOMIC_SEQ_CST=5 -D__OPTIMIZE_SIZE__=1 '-D__FLT32X_MIN_10_EXP__=(-307)' '-D__UINTPTR_TYPE__=long unsigned int' -D__DEC64_SUBNORMAL_MIN__=0.000000000000001E-383DD -D__DEC128_MANT_DIG__=34 '-D__LDBL_MIN_10_EXP__=(-4931)' -D__cpp_generic_lambdas=201304L -D__SSE_MATH__=1 -D__SIZEOF_LONG_LONG__=8 -D__cpp_user_defined_literals=200809L -D__FLT128_DECIMAL_DIG__=36 -D__GCC_ATOMIC_LLONG_LOCK_FREE=2 -D__FLT32_HAS_QUIET_NAN__=1 -D__FLT_DECIMAL_DIG__=9 -D__UINT_FAST16_MAX__=0xffffffffffffffffUL '-D__LDBL_NORM_MAX__=1.18973149535723176502126385303097021e+4932L' -D__GCC_ATOMIC_SHORT_LOCK_FREE=2 '-D__UINT_FAST8_TYPE__=unsigned char' -D__cpp_init_captures=201304L -D__ATOMIC_ACQ_REL=4 -D__ATOMIC_RELEASE=3 -I. -I/tools/verilator/4.210/share/verilator/include -I/tools/verilator/4.210/share/verilator/include/vltstd -D_GNU_SOURCE -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 '-I/usr/include/c++/11' '-I/usr/include/x86_64-linux-gnu/c++/11' '-I/usr/include/c++/11/backward' -I/usr/lib/gcc/x86_64-linux-gnu/11/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include -- VopenMSP430__ALL.cpp
+[E 14:16:30 191585] Starting compilation TRAP /home/joey/Desktop/test/RTD012/codeql-RTD012/trap/cpp/compilations/40/58793819_0.trap.br
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__ALL.cpp
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430.cpp
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/tools/verilator/4.210/share/verilator/include/verilated_heavy.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/tools/verilator/4.210/share/verilator/include/verilated.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/tools/verilator/4.210/share/verilator/include/verilatedos.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/inttypes.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/features.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/stdc-predef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/sys/cdefs.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/gnu/stubs.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/gnu/stubs-64.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/stdint.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/timesize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/typesizes.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/time64.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wchar.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdint-intn.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/sys/types.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/clock_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/time_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/timer_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/endian.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/endian.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/endianness.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/byteswap.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/uintn-identity.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/sys/select.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/select.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/select2.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/struct_mutex.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/unistd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/posix_opt.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/environments.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/confname.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/getopt_posix.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/getopt_core.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/unistd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/unistd_ext.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cassert
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/assert.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cmath
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/cpp_type_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/type_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/math.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/math-vector.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/floatn.h
+"/usr/include/x86_64-linux-gnu/bits/floatn.h", line 75: error: 128-bit floating-point types are not supported in this configuration
+  typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
+                                                     ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn.h", line 75: error: 128-bit floating-point types are not supported in this configuration
+  typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
+                                                     ^
+
+
+"/usr/include/x86_64-linux-gnu/bits/floatn.h", line 87: error: invalid combination of type specifiers
+  typedef __float128 _Float128;
+                     ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn.h", line 87: error: invalid combination of type specifiers
+  typedef __float128 _Float128;
+                     ^
+
+
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/floatn-common.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/long-double.h
+"/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 214: error: invalid combination of type specifiers
+  typedef float _Float32;
+                ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 214: error: invalid combination of type specifiers
+  typedef float _Float32;
+                ^
+
+
+"/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 251: error: invalid combination of type specifiers
+  typedef double _Float64;
+                 ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 251: error: invalid combination of type specifiers
+  typedef double _Float64;
+                 ^
+
+
+"/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 268: error: invalid combination of type specifiers
+  typedef double _Float32x;
+                 ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 268: error: invalid combination of type specifiers
+  typedef double _Float32x;
+                 ^
+
+
+"/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 285: error: invalid combination of type specifiers
+  typedef long double _Float64x;
+                      ^
+
+[E 14:16:30 191585] Warning[extractor-c++]: In construct_message: "/usr/include/x86_64-linux-gnu/bits/floatn-common.h", line 285: error: invalid combination of type specifiers
+  typedef long double _Float64x;
+                      ^
+
+
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/fp-logb.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/fp-fast.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/iscanonical.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/std_abs.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/stdlib.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/waitflags.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/waitstatus.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/locale_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/alloca.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdlib.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdarg
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdio
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/stdio.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/__FILE.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/FILE.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdio_lim.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/sys_errlist.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/stdio2.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdlib
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstring
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/string.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/strings.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/strings_fortified.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/string_fortified.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/memory
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_algobase.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/functexcept.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/exception_defines.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/numeric_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_pair.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/move.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/type_traits
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_iterator_base_types.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_iterator_base_funcs.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/concept_check.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/debug/assertions.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_iterator.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/ptr_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/debug/debug.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/predefined_ops.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/allocator.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/new_allocator.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/new
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/exception.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/memoryfwd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_construct.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_uninitialized.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/alloc_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/alloc_traits.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_tempbuf.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_raw_storage_iter.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/align.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bit
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/uses_allocator.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/unique_ptr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/utility
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_relops.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/initializer_list
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/tuple
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/array
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/range_access.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/invoke.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_function.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/backward/binders.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/functional_hash.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/hash_bytes.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/shared_ptr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/iosfwd
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stringfwd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/postypes.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cwchar
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/wchar.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/libc-header-start.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/wint_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wchar2.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/shared_ptr_base.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/typeinfo
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/allocated_ptr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/refwrap.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/aligned_buffer.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/atomicity.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/pthread.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/sched.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/sched.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/cpu-set.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/time.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/time.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/timex.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/setjmp.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/wordsize.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/concurrence.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/exception
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/exception_ptr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/cxxabi_init_exception.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/nested_exception.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/shared_ptr_atomic.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/atomic_base.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/atomic_lockfree_defines.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/backward/auto_ptr.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/string
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/char_traits.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cwchar
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdint
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/localefwd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/clocale
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/locale.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/locale.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cctype
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/ctype.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/ostream_insert.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/cxxabi_forced.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/basic_string.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/ext/string_conversions.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdlib
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cwchar
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdio
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cerrno
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/errno.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/errno.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/linux/errno.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/asm/errno.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/asm-generic/errno.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/asm-generic/errno-base.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/x86_64-linux-gnu/bits/types/error_t.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/charconv.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/basic_string.tcc
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/vector
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_vector.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_bvector.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/vector.tcc
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/algorithm
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_algo.h
+[E 14:16:30 191585] Already archived /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/cstdlib
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/algorithmfwd.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_heap.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/uniform_int_dist.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/deque
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_deque.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/deque.tcc
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/map
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_tree.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_map.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_multimap.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/erase_if.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/set
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_set.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/stl_multiset.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/unordered_set
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/hashtable.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/hashtable_policy.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/usr/include/c++/11/bits/unordered_set.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__Syms.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430___024root.h
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430___024root.cpp
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__ConstPool_0.cpp
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430___024root__Slow.cpp
+[E 14:16:30 191585] Archiving /home/joey/Desktop/test/RTD012/codeql-RTD012/src/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__Syms.cpp
+[E 14:16:30 191585] Creating trap tarball /home/joey/Desktop/test/RTD012/codeql-RTD012/trap/cpp/tarballs/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__ALL.cpp.ca0193b0_0.trap.tar.br
+[E 14:16:30 191585] Emitting trap files for VopenMSP430__ALL.cpp
+[E 14:16:30 191585] Opening existencedb in /home/joey/Desktop/test/RTD012/codeql-RTD012/working/existencedb/db
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 6.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 7.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 7.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 7.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 7.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20399 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 20091 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 15949 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_constructor_init: Unexpected dynamic init kind 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 13043 > 0.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:31 191585] Warning[extractor-c++]: In index_stmk_decl: No source sequence entry for declaration statement.
+[E 14:16:32 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:32 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:32 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:32 191585] Warning[extractor-c++]: In add_macro_expansion: Affecting macros went backwards: 14149 > 0.
+[E 14:16:32 191585] Wrote 4145 files to /home/joey/Desktop/test/RTD012/codeql-RTD012/trap/cpp/tarballs/home/joey/Desktop/test/RTD012/obj_dir/VopenMSP430__ALL.cpp.ca0193b0_0.trap.tar.br
+6 errors detected in the compilation of "VopenMSP430__ALL.cpp".
+[E 14:16:32 191585] Finished compilation TRAP /home/joey/Desktop/test/RTD012/codeql-RTD012/trap/cpp/compilations/40/58793819_0.trap.br
+[E 14:16:32 191585] Marking C compilation as happened.
+[E 14:16:32 191585] Setting tag c-compilation-happened
+[E 14:16:32 191585] Starting from CODEQL_TRACER_DB_ID 000000000002EC2E_0000000000000001
+[E 14:16:32 191585] Locking DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:32 191585] Locked DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:32 191585] Set tag for 000000000002EC2E_0000000000000001
+[E 14:16:32 191585] Set tag for 000000000002EC2C_0000000000000001
+[E 14:16:32 191585] Set tag for 000000000002EC27_0000000000000003
+[E 14:16:32 191585] Set tag for 000000000002EC27_0000000000000002
+[E 14:16:32 191585] Set tag for root
+[E 14:16:32 191585] Unlocking DB
+[E 14:16:32 191585] Unlocked DB
+[T 14:16:32 191534] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 1.
+[T 14:16:32 191629] Initializing tracer.
+[T 14:16:32 191629] Initialising tags...
+[T 14:16:32 191629] ID set to 000000000002EC8D_0000000000000001 (parent 000000000002EC2C_0000000000000001)
+[T 14:16:32 191629] ==== Candidate to intercept: as (canonical: as) ====
+[T 14:16:32 191629] Will try to resolve as in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191629]  -> path lookup for as as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/as...
+[T 14:16:32 191629]  -> path lookup for as as /home/joey/.local/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /home/joey/.cargo/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191629]  -> path lookup for as as /usr/local/sbin/as...
+[T 14:16:32 191629]  -> path lookup for as as /usr/local/bin/as...
+[T 14:16:32 191629]  -> path lookup for as as /usr/sbin/as...
+[T 14:16:32 191629]  -> path lookup for as as /usr/bin/as...
+[T 14:16:32 191629] Resolved barename as to /usr/bin/as
+[T 14:16:32 191629] Lua: === Intercepted call to /usr/bin/as ===
+[T 14:16:32 191629] Executing the following tracer actions:
+[T 14:16:32 191629] Tracer actions:
+[T 14:16:32 191629] pre_invocations(0)
+[T 14:16:32 191629] post_invocations(1)
+[T 14:16:32 191629] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, -I, ., -I, /tools/verilator/4.210/share/verilator/include, -I, /tools/verilator/4.210/share/verilator/include/vltstd, --64, -o, VopenMSP430__ALL.o, /tmp/cc5AKlI1.s]
+[T 14:16:32 191629] trace_languages(1): [cpp]
+[T 14:16:32 191631] Attempting to switch stdout/stderr to 4...
+[T 14:16:32 191631] Initializing tracer.
+[T 14:16:32 191631] Initialising tags...
+[T 14:16:32 191631] ID set to 000000000002EC8F_0000000000000001 (parent 000000000002EC8D_0000000000000001)
+[E 14:16:32 191631] CodeQL C/C++ Extractor 2.11.6
+[E 14:16:32 191631] Current directory: /home/joey/Desktop/test/RTD012/obj_dir
+[E 14:16:32 191631] Command: /tools/codeql/cpp/tools/linux64/extractor --assembler --codeql-assembler-executable /usr/bin/as -I . -I /tools/verilator/4.210/share/verilator/include -I /tools/verilator/4.210/share/verilator/include/vltstd --64 -o VopenMSP430__ALL.o /tmp/cc5AKlI1.s
+[T 14:16:32 191629] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191632] Attempting to switch stdout/stderr to 4...
+[T 14:16:32 191632] Initializing tracer.
+[T 14:16:32 191632] Initialising tags...
+[T 14:16:32 191632] ID set to 000000000002EC90_0000000000000001 (parent 000000000002EC2C_0000000000000001)
+[E 14:16:32 191632] CodeQL C/C++ Extractor 2.11.6
+[E 14:16:32 191632] Current directory: /home/joey/Desktop/test/RTD012/obj_dir
+[E 14:16:32 191632] Command: /tools/codeql/cpp/tools/linux64/extractor --mimic '/usr/bin/g++-11' -I. -MMD -I/tools/verilator/4.210/share/verilator/include -I/tools/verilator/4.210/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable -Wno-shadow '-std=gnu++14' -Os -c -o VopenMSP430__ALL.o VopenMSP430__ALL.cpp
+[T 14:16:32 191633] Initializing tracer.
+[T 14:16:32 191633] Initialising tags...
+[T 14:16:32 191633] ID set to 000000000002EC91_0000000000000001 (parent 000000000002EC90_0000000000000001)
+[T 14:16:32 191633] ==== Candidate to intercept: /usr/bin/g++-11 (canonical: /usr/bin/x86_64-linux-gnu-g++-11) ====
+[T 14:16:32 191633] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-g++-11 ===
+[T 14:16:32 191633] Executing the following tracer actions:
+[T 14:16:32 191633] Tracer actions:
+[T 14:16:32 191633] pre_invocations(0)
+[T 14:16:32 191633] post_invocations(1)
+[T 14:16:32 191633] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-g++-11, --version]
+[T 14:16:32 191633] trace_languages(1): [cpp]
+[T 14:16:32 191635] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191635] Initializing tracer.
+[T 14:16:32 191635] Initialising tags...
+[T 14:16:32 191635] ID set to 000000000002EC93_0000000000000001 (parent 000000000002EC91_0000000000000001)
+[E 14:16:32 191635] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191633] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191636] Initializing tracer.
+[T 14:16:32 191636] Initialising tags...
+[T 14:16:32 191636] ID set to 000000000002EC94_0000000000000001 (parent 000000000002EC90_0000000000000001)
+[T 14:16:32 191636] ==== Candidate to intercept: /usr/bin/g++-11 (canonical: /usr/bin/x86_64-linux-gnu-g++-11) ====
+[T 14:16:32 191636] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-g++-11 ===
+[T 14:16:32 191636] Executing the following tracer actions:
+[T 14:16:32 191636] Tracer actions:
+[T 14:16:32 191636] pre_invocations(0)
+[T 14:16:32 191636] post_invocations(1)
+[T 14:16:32 191636] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-g++-11, --help]
+[T 14:16:32 191636] trace_languages(1): [cpp]
+[T 14:16:32 191638] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191638] Initializing tracer.
+[T 14:16:32 191638] Initialising tags...
+[T 14:16:32 191638] ID set to 000000000002EC96_0000000000000001 (parent 000000000002EC94_0000000000000001)
+[E 14:16:32 191638] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191636] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191639] Initializing tracer.
+[T 14:16:32 191639] Initialising tags...
+[T 14:16:32 191639] ID set to 000000000002EC97_0000000000000001 (parent 000000000002EC90_0000000000000001)
+[T 14:16:32 191639] ==== Candidate to intercept: /usr/bin/g++-11 (canonical: /usr/bin/x86_64-linux-gnu-g++-11) ====
+[T 14:16:32 191639] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-g++-11 ===
+[T 14:16:32 191639] Executing the following tracer actions:
+[T 14:16:32 191639] Tracer actions:
+[T 14:16:32 191639] pre_invocations(0)
+[T 14:16:32 191639] post_invocations(1)
+[T 14:16:32 191639] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-g++-11, -nostdinc, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_2_191632_79788.o, -c, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_1_191632_79753.c]
+[T 14:16:32 191639] trace_languages(1): [cpp]
+[T 14:16:32 191641] Initializing tracer.
+[T 14:16:32 191641] Initialising tags...
+[T 14:16:32 191641] ID set to 000000000002EC99_0000000000000001 (parent 000000000002EC97_0000000000000001)
+[T 14:16:32 191641] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:32 191641] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:32 191641] Executing the following tracer actions:
+[T 14:16:32 191641] Tracer actions:
+[T 14:16:32 191641] pre_invocations(0)
+[T 14:16:32 191641] post_invocations(1)
+[T 14:16:32 191641] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, -D_GNU_SOURCE, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_1_191632_79753.c, -quiet, -dumpdir, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//, -dumpbase, semmle_2_191632_79788.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccjpYdh7.s]
+[T 14:16:32 191641] trace_languages(1): [cpp]
+[T 14:16:32 191643] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191643] Initializing tracer.
+[T 14:16:32 191643] Initialising tags...
+[T 14:16:32 191643] ID set to 000000000002EC9B_0000000000000001 (parent 000000000002EC99_0000000000000001)
+[E 14:16:32 191643] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191641] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191644] Initializing tracer.
+[T 14:16:32 191644] Initialising tags...
+[T 14:16:32 191644] ID set to 000000000002EC9C_0000000000000001 (parent 000000000002EC97_0000000000000001)
+[T 14:16:32 191644] ==== Candidate to intercept: as (canonical: as) ====
+[T 14:16:32 191644] Will try to resolve as in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191644]  -> path lookup for as as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/as...
+[T 14:16:32 191644]  -> path lookup for as as /home/joey/.local/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /home/joey/.cargo/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191644]  -> path lookup for as as /usr/local/sbin/as...
+[T 14:16:32 191644]  -> path lookup for as as /usr/local/bin/as...
+[T 14:16:32 191644]  -> path lookup for as as /usr/sbin/as...
+[T 14:16:32 191644]  -> path lookup for as as /usr/bin/as...
+[T 14:16:32 191644] Resolved barename as to /usr/bin/as
+[T 14:16:32 191644] Lua: === Intercepted call to /usr/bin/as ===
+[T 14:16:32 191644] Executing the following tracer actions:
+[T 14:16:32 191644] Tracer actions:
+[T 14:16:32 191644] pre_invocations(0)
+[T 14:16:32 191644] post_invocations(1)
+[T 14:16:32 191644] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_2_191632_79788.o, /tmp/ccjpYdh7.s]
+[T 14:16:32 191644] trace_languages(1): [cpp]
+[T 14:16:32 191646] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191646] Initializing tracer.
+[T 14:16:32 191646] Initialising tags...
+[T 14:16:32 191646] ID set to 000000000002EC9E_0000000000000001 (parent 000000000002EC9C_0000000000000001)
+[E 14:16:32 191646] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191644] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191647] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191647] Initializing tracer.
+[T 14:16:32 191647] Initialising tags...
+[T 14:16:32 191647] ID set to 000000000002EC9F_0000000000000001 (parent 000000000002EC97_0000000000000001)
+[E 14:16:32 191647] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191639] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191648] Initializing tracer.
+[T 14:16:32 191648] Initialising tags...
+[T 14:16:32 191648] ID set to 000000000002ECA0_0000000000000001 (parent 000000000002EC90_0000000000000001)
+[T 14:16:32 191648] ==== Candidate to intercept: /usr/bin/g++-11 (canonical: /usr/bin/x86_64-linux-gnu-g++-11) ====
+[T 14:16:32 191648] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-g++-11 ===
+[T 14:16:32 191648] Executing the following tracer actions:
+[T 14:16:32 191648] Tracer actions:
+[T 14:16:32 191648] pre_invocations(0)
+[T 14:16:32 191648] post_invocations(1)
+[T 14:16:32 191648] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-g++-11, -nostdinc, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_2_191632_79788.o, -c, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_1_191632_79753.c, -v, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35]
+[T 14:16:32 191648] trace_languages(1): [cpp]
+[T 14:16:32 191650] Initializing tracer.
+[T 14:16:32 191650] Initialising tags...
+[T 14:16:32 191650] ID set to 000000000002ECA2_0000000000000001 (parent 000000000002ECA0_0000000000000001)
+[T 14:16:32 191650] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:32 191650] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:32 191650] Executing the following tracer actions:
+[T 14:16:32 191650] Tracer actions:
+[T 14:16:32 191650] pre_invocations(0)
+[T 14:16:32 191650] post_invocations(1)
+[T 14:16:32 191650] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -quiet, -nostdinc, -v, -imultiarch, x86_64-linux-gnu, -D_GNU_SOURCE, -iwithprefix, 80AD44EC-F542-4CCF-8C9F-328EB87D7D35, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_1_191632_79753.c, -quiet, -dumpdir, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//, -dumpbase, semmle_2_191632_79788.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -version, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccheyN7N.s]
+[T 14:16:32 191650] trace_languages(1): [cpp]
+[T 14:16:32 191652] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191652] Initializing tracer.
+[T 14:16:32 191652] Initialising tags...
+[T 14:16:32 191652] ID set to 000000000002ECA4_0000000000000001 (parent 000000000002ECA2_0000000000000001)
+[E 14:16:32 191652] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191650] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191653] Initializing tracer.
+[T 14:16:32 191653] Initialising tags...
+[T 14:16:32 191653] ID set to 000000000002ECA5_0000000000000001 (parent 000000000002ECA0_0000000000000001)
+[T 14:16:32 191653] ==== Candidate to intercept: as (canonical: as) ====
+[T 14:16:32 191653] Will try to resolve as in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191653]  -> path lookup for as as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/as...
+[T 14:16:32 191653]  -> path lookup for as as /home/joey/.local/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /home/joey/.cargo/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191653]  -> path lookup for as as /usr/local/sbin/as...
+[T 14:16:32 191653]  -> path lookup for as as /usr/local/bin/as...
+[T 14:16:32 191653]  -> path lookup for as as /usr/sbin/as...
+[T 14:16:32 191653]  -> path lookup for as as /usr/bin/as...
+[T 14:16:32 191653] Resolved barename as to /usr/bin/as
+[T 14:16:32 191653] Lua: === Intercepted call to /usr/bin/as ===
+[T 14:16:32 191653] Executing the following tracer actions:
+[T 14:16:32 191653] Tracer actions:
+[T 14:16:32 191653] pre_invocations(0)
+[T 14:16:32 191653] post_invocations(1)
+[T 14:16:32 191653] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, -v, --64, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_2_191632_79788.o, /tmp/ccheyN7N.s]
+[T 14:16:32 191653] trace_languages(1): [cpp]
+[T 14:16:32 191655] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191655] Initializing tracer.
+[T 14:16:32 191655] Initialising tags...
+[T 14:16:32 191655] ID set to 000000000002ECA7_0000000000000001 (parent 000000000002ECA5_0000000000000001)
+[E 14:16:32 191655] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191653] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191656] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191656] Initializing tracer.
+[T 14:16:32 191656] Initialising tags...
+[T 14:16:32 191656] ID set to 000000000002ECA8_0000000000000001 (parent 000000000002ECA0_0000000000000001)
+[E 14:16:32 191656] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191648] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191657] Initializing tracer.
+[T 14:16:32 191657] Initialising tags...
+[T 14:16:32 191657] ID set to 000000000002ECA9_0000000000000001 (parent 000000000002EC90_0000000000000001)
+[T 14:16:32 191657] ==== Candidate to intercept: /usr/bin/g++-11 (canonical: /usr/bin/x86_64-linux-gnu-g++-11) ====
+[T 14:16:32 191657] Lua: === Intercepted call to /usr/bin/x86_64-linux-gnu-g++-11 ===
+[T 14:16:32 191657] Executing the following tracer actions:
+[T 14:16:32 191657] Tracer actions:
+[T 14:16:32 191657] pre_invocations(0)
+[T 14:16:32 191657] post_invocations(1)
+[T 14:16:32 191657] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/bin/x86_64-linux-gnu-g++-11, -nostdinc, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_4_191632_129232.o, -c, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_3_191632_129201.c]
+[T 14:16:32 191657] trace_languages(1): [cpp]
+[T 14:16:32 191659] Initializing tracer.
+[T 14:16:32 191659] Initialising tags...
+[T 14:16:32 191659] ID set to 000000000002ECAB_0000000000000001 (parent 000000000002ECA9_0000000000000001)
+[T 14:16:32 191659] ==== Candidate to intercept: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus (canonical: /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus) ====
+[T 14:16:32 191659] Lua: === Intercepted call to /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus ===
+[T 14:16:32 191659] Executing the following tracer actions:
+[T 14:16:32 191659] Tracer actions:
+[T 14:16:32 191659] pre_invocations(0)
+[T 14:16:32 191659] post_invocations(1)
+[T 14:16:32 191659] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--mimic, /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus, -quiet, -nostdinc, -imultiarch, x86_64-linux-gnu, -D_GNU_SOURCE, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_3_191632_129201.c, -quiet, -dumpdir, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//, -dumpbase, semmle_4_191632_129232.c, -dumpbase-ext, .c, -mtune=generic, -march=x86-64, -fasynchronous-unwind-tables, -fstack-protector-strong, -Wformat, -Wformat-security, -fstack-clash-protection, -fcf-protection, -o, /tmp/ccZzR1Yr.s]
+[T 14:16:32 191659] trace_languages(1): [cpp]
+[T 14:16:32 191661] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191661] Initializing tracer.
+[T 14:16:32 191661] Initialising tags...
+[T 14:16:32 191661] ID set to 000000000002ECAD_0000000000000001 (parent 000000000002ECAB_0000000000000001)
+[E 14:16:32 191661] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191659] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191662] Initializing tracer.
+[T 14:16:32 191662] Initialising tags...
+[T 14:16:32 191662] ID set to 000000000002ECAE_0000000000000001 (parent 000000000002ECA9_0000000000000001)
+[T 14:16:32 191662] ==== Candidate to intercept: as (canonical: as) ====
+[T 14:16:32 191662] Will try to resolve as in path /tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli:/home/joey/.local/bin:/home/joey/.cargo/bin:/tools/Xilinx/Vitis_HLS/2022.1/bin:/tools/Xilinx/Vitis/2022.1/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin:/tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin:/tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin:/tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin:/tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin:/tools/Xilinx/Vitis/2022.1/aietools/bin:/tools/Xilinx/Vivado/2022.1/bin:/tools/Xilinx/DocNav:/tools/verilator/4.210/bin:/home/joey/oss-cad-suite/bin:/tools/codeql:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/joey/.local/bin:/home/joey/.local/bin.
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191662]  -> path lookup for as as /home/joey/.vscode-server/bin/e8a3071ea4344d9d48ef8a4df2c097372b0c5161/bin/remote-cli/as...
+[T 14:16:32 191662]  -> path lookup for as as /home/joey/.local/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /home/joey/.cargo/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis_HLS/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/lin/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/arm/lin/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/microblaze/linux_toolchain/lin64_le/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-linux-gnueabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch32/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-linux/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/aarch64/lin/aarch64-none/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/gnu/armr5/lin/gcc-arm-none-eabi/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/tps/lnx64/cmake-3.3.2/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vitis/2022.1/aietools/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/Vivado/2022.1/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/Xilinx/DocNav/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/verilator/4.210/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /home/joey/oss-cad-suite/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /tools/codeql/as...
+[T 14:16:32 191662]  -> path lookup for as as /usr/local/sbin/as...
+[T 14:16:32 191662]  -> path lookup for as as /usr/local/bin/as...
+[T 14:16:32 191662]  -> path lookup for as as /usr/sbin/as...
+[T 14:16:32 191662]  -> path lookup for as as /usr/bin/as...
+[T 14:16:32 191662] Resolved barename as to /usr/bin/as
+[T 14:16:32 191662] Lua: === Intercepted call to /usr/bin/as ===
+[T 14:16:32 191662] Executing the following tracer actions:
+[T 14:16:32 191662] Tracer actions:
+[T 14:16:32 191662] pre_invocations(0)
+[T 14:16:32 191662] post_invocations(1)
+[T 14:16:32 191662] invocation: /tools/codeql/cpp/tools/linux64/extractor, args: [--assembler, --codeql-assembler-executable, /usr/bin/as, --64, -o, /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tmp//semmle_4_191632_129232.o, /tmp/ccZzR1Yr.s]
+[T 14:16:32 191662] trace_languages(1): [cpp]
+[T 14:16:32 191664] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191664] Initializing tracer.
+[T 14:16:32 191664] Initialising tags...
+[T 14:16:32 191664] ID set to 000000000002ECB0_0000000000000001 (parent 000000000002ECAE_0000000000000001)
+[E 14:16:32 191664] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191662] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191665] Attempting to switch stdout/stderr to 7...
+[T 14:16:32 191665] Initializing tracer.
+[T 14:16:32 191665] Initialising tags...
+[T 14:16:32 191665] ID set to 000000000002ECB1_0000000000000001 (parent 000000000002ECA9_0000000000000001)
+[E 14:16:32 191665] Mimicry classification suppression detected; exiting.
+[T 14:16:32 191657] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[E 14:16:32 191632] Checking whether C compilation already happened.
+[E 14:16:32 191632] Checking for tag c-compilation-happened
+[E 14:16:32 191632] Checking CODEQL_TRACER_DB_ID 000000000002EC2C_0000000000000001
+[E 14:16:32 191632] Locking DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:32 191632] Locked DB /home/joey/Desktop/test/RTD012/codeql-RTD012/working/tags.db
+[E 14:16:32 191632] Unlocking DB
+[E 14:16:32 191632] Unlocked DB
+[E 14:16:32 191632] Exiting as C compilation already happened.
+[T 14:16:32 191532] Extractor /tools/codeql/cpp/tools/linux64/extractor terminated with exit code 0.
+[T 14:16:32 191666] Initializing tracer.
+[T 14:16:32 191666] Initialising tags...
+[T 14:16:32 191666] ID set to 000000000002ECB2_0000000000000001 (parent 000000000002EC27_0000000000000003)
+[T 14:16:32 191666] ==== Candidate to intercept: /bin/sh (canonical: /usr/bin/dash) ====
+[T 14:16:32 191666] Executing the following tracer actions:
+[T 14:16:32 191666] Tracer actions:
+[T 14:16:32 191666] pre_invocations(0)
+[T 14:16:32 191666] post_invocations(0)
+[T 14:16:32 191666] trace_languages(1): [cpp]
+[T 14:16:32 191667] Initializing tracer.
+[T 14:16:32 191667] Initialising tags...
+[T 14:16:32 191667] ID set to 000000000002ECB3_0000000000000001 (parent 000000000002EC27_0000000000000003)
+[T 14:16:32 191667] ==== Candidate to intercept: /bin/sh (canonical: /usr/bin/dash) ====
+[T 14:16:32 191667] Executing the following tracer actions:
+[T 14:16:32 191667] Tracer actions:
+[T 14:16:32 191667] pre_invocations(0)
+[T 14:16:32 191667] post_invocations(0)
+[T 14:16:32 191667] trace_languages(1): [cpp]
+[T 14:16:32 191668] Initializing tracer.
+[T 14:16:32 191668] Initialising tags...
+[T 14:16:32 191668] ID set to 000000000002ECB4_0000000000000001 (parent 000000000002EC27_0000000000000003)
+[T 14:16:32 191668] ==== Candidate to intercept: /bin/sh (canonical: /usr/bin/dash) ====
+[T 14:16:32 191668] Executing the following tracer actions:
+[T 14:16:32 191668] Tracer actions:
+[T 14:16:32 191668] pre_invocations(0)
+[T 14:16:32 191668] post_invocations(0)
+[T 14:16:32 191668] trace_languages(1): [cpp]
+[T 14:16:32 191669] Initializing tracer.
+[T 14:16:32 191669] Initialising tags...
+[T 14:16:32 191669] ID set to 000000000002ECB5_0000000000000001 (parent 000000000002ECB4_0000000000000001)
+[T 14:16:32 191669] ==== Candidate to intercept: /usr/bin/ar (canonical: /usr/bin/x86_64-linux-gnu-ar) ====
+[T 14:16:32 191669] Executing the following tracer actions:
+[T 14:16:32 191669] Tracer actions:
+[T 14:16:32 191669] pre_invocations(0)
+[T 14:16:32 191669] post_invocations(0)
+[T 14:16:32 191669] trace_languages(1): [cpp]
+[T 14:16:32 191670] Initializing tracer.
+[T 14:16:32 191670] Initialising tags...
+[T 14:16:32 191670] ID set to 000000000002ECB6_0000000000000001 (parent 000000000002ECB4_0000000000000001)
+[T 14:16:32 191670] ==== Candidate to intercept: /usr/bin/rm (canonical: /usr/bin/rm) ====
+[T 14:16:32 191670] Executing the following tracer actions:
+[T 14:16:32 191670] Tracer actions:
+[T 14:16:32 191670] pre_invocations(0)
+[T 14:16:32 191670] post_invocations(0)
+[T 14:16:32 191670] trace_languages(1): [cpp]
